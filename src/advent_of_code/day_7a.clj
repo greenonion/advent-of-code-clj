@@ -95,3 +95,9 @@
 
 (defn part_1 []
   (solve (data "resources/day_7_input.txt")))
+
+;; For part two just change the input line
+;; that defines b
+;; from 14146 -> b
+;; to
+;; 956 -> b
