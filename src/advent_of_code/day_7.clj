@@ -1,4 +1,4 @@
-(ns advent-of-code.day-7a
+(ns advent-of-code.day-7
   (:require [clojure.string :as string]))
 
 (def actions ["AND" "OR" "LSHIFT" "RSHIFT" "NOT"])
