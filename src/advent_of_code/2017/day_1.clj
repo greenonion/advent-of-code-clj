@@ -23,7 +23,7 @@
   (map
    (fn [a b] [a b])
    a
-   (take (count a) (drop (/ (count a) 2) (cycle a)))))
+   (drop (/ (count a) 2) (cycle a))))
 
 (defn second-star []
   (add-if-conseq (pair-nth inpt)))
