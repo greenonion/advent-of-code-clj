@@ -38,6 +38,16 @@
 
 ;; gold star
 
+(defn square-neighbors [[x y]]
+  [[(inc x) y]
+   [(inc x) (inc y)]
+   [x (inc y)]
+   [(dec x) (inc y)]
+   [(dec x) y]
+   [(dec x) (dec y)]
+   [x (dec y)]
+   [(inc x) (dec y)]])
+
 (defn next-square-and-dir [[x y] d]
   (let [[x2 y2] (cond
                   (= d :w) [(inc x) y]
