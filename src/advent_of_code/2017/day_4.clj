@@ -11,9 +11,9 @@
 
 (defn
   ^{:test (fn []
-            (is (= true (unique-words? "aa bb cc dd ee")))
-            (is (= false (unique-words? "aa bb cc dd aa")))
-            (is (= true (unique-words? "aa bb cc dd aaa"))))}
+            (is (= true (words (unique-words? "aa bb cc dd ee"))))
+            (is (= false (words (unique-words? "aa bb cc dd aa"))))
+            (is (= true (words (unique-words? "aa bb cc dd aaa")))))}
   unique-words? [words]
   (every? #(= % 1) (vals (frequencies words))))
 
