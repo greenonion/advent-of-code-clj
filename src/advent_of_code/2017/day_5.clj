@@ -1,6 +1,6 @@
 (ns advent-of-code.2017.day-5
   (:require [clojure.string :as string])
-  (:use clojure.test))r
+  (:use clojure.test))
 
 (defn inpt []
   (as-> "resources/2017/day_5_input.txt" $
